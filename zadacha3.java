@@ -16,7 +16,7 @@ public class zadacha3 {
 
         originalPublication = ("In Java, #javaforever Scanner is a class in java.util package #javaforever used for obtaining the input of the primitive types like int, double, etc. and strings. #javaforever");
         int end = originalPublication.length();
-        if (originalPublication.contains("#javaforever") && lastMentionIndex -  <= end) {
+        if (originalPublication.contains("#javaforever") && end - lastMentionIndex -  <= 0) {
                numberOfMentions+=1;
 
                lastMentionIndex = originalPublication.lastIndexOf("#javaforever");
